@@ -10,6 +10,7 @@ Python の仮想環境 (`venv`) を利用して依存パッケージを管理し
 Python 3.10 以降がインストールされていることを確認してください。
 
 ```bash
+cd jikken3_vision_recognition/
 python3 -m venv venv
 ```
 

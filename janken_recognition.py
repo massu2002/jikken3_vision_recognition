@@ -59,11 +59,11 @@ from visualize import *
 @dataclass
 class TrainConfig:
     dataset_dir: Path
+    output_dir: Path
     img_size: int = 224
     batch_size: int = 32
     val_split: float = 0.1
     seed: int = 42
-    output_dir: Path
     epochs: int = 10
     learning_rate: float = 1e-3
     weight_decay: float = 0.0
@@ -245,8 +245,6 @@ def main():
             learning_rate=args.learning_rate,
             weight_decay=args.weight_decay,
             freeze_base=args.freeze_base,
-            patience=args.patience,
-            early_stopping=args.early_stopping,
         )
         best_path = train_model(cfg)
         print(f"[DONE] Training complete. Best model: {best_path}")
