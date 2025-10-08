@@ -1,0 +1,10 @@
+{
+  "model_name": "vgg16",
+  "img_size": 224,
+  "class_names": [
+    "choki",
+    "gu",
+    "per"
+  ],
+  "best_model_path": "outputs/best_model.keras"
+}
